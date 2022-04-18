@@ -1,0 +1,104 @@
+body {
+    background-color: wheat;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* landing-page permainan batu gunting kertas */
+#page-game-play {
+    display: flex;
+    flex-direction: column;
+}
+
+/* tombol kembali ke landing page */
+.button-back {
+    padding: 14px;
+}
+
+.button-back a {
+    font-size: 24px;
+    font-weight: bold;
+    color: tan;
+    text-decoration: none;
+    padding: 14px;
+}
+
+.button-back:hover a {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+.button-back img {
+    vertical-align: -10px;
+    height: 40px;
+}
+
+/* kolom permainan */
+#game-container {
+    justify-content: space-around;
+    text-align: center;
+    display: flex;
+}
+
+/* kolom player dan komputer */
+.player-column,
+.com-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.player-column button {
+    background-color: transparent;
+    border: none;
+}
+
+.player-column img,
+.com-column img {
+    width: 64px;
+    height: 64px;
+    padding: 32px;
+}
+
+.player-column img:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+/* kolom versus dan hasil */
+.vs-result-column {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.vs-result-column .display {
+    font-size: 64px;
+    font-weight: bold;
+    color: red;
+}
+
+/* tombol bermain kembali */
+#refresh-button {
+    justify-content: center;
+    display: flex;
+}
+
+#refresh-button button {
+    background-color: transparent;
+    border: 0;
+}
+
+#refresh-button img {
+    width: 64px;
+    height: 64px;
+    padding: 32px;
+}
+
+#refresh-button img:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}

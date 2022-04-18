@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- judul website -->
+        <title>Rock Paper Scissors</title>
+
+        <!-- panggil file css -->
+        <link rel="stylesheet" href="/css/game.css" />
+    </head>
+    <body>
+        <!-- halaman game play -->
+        <div id="page-game-play">
+            <!-- tombol kembali ke landing page -->
+            <div class="button-back">
+                <a href="./"> ◀︎ <img src="/assets/img/game/logo.png" alt="logo" /> ROCK PAPER SCISSORS </a>
+            </div>
+
+            <!-- kolom permainan batu kertas gunting -->
+            <div id="game-container">
+                <!-- kolom pemain -->
+                <div class="player-column">
+                    <h1>PLAYER</h1>
+                    <button class="rock-button">
+                        <img class="rock" src="/assets/img/game/rock.png" alt="rock" />
+                    </button>
+                    <button class="paper-button">
+                        <img class="paper" src="/assets/img/game/paper.png" alt="paper" />
+                    </button>
+                    <button class="scissors-button">
+                        <img class="scissors" src="/assets/img/game/scissors.png" alt="scissors" />
+                    </button>
+                </div>
+
+                <!-- kolom versus dan hasil permainan -->
+                <div class="vs-result-column">
+                    <label class="display">VS</label>
+                </div>
+
+                <!-- kolom komputer -->
+                <div class="com-column">
+                    <h1>COM</h1>
+                    <div>
+                        <img class="com-rock" src="/assets/img/game/rock.png" alt="rock" />
+                    </div>
+                    <div>
+                        <img class="com-paper" src="/assets/img/game/paper.png" alt="paper" />
+                    </div>
+                    <div>
+                        <img class="com-scissors" src="/assets/img/game/scissors.png" alt="scissors" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- tombol bermain kembali -->
+            <div id="refresh-button">
+                <button class="button" value="refresh" onClick="refresh(this)">
+                    <img src="/assets/img/game/refresh.png" alt="refresh" />
+                </button>
+            </div>
+        </div>
+
+        <!-- panggil file javascript -->
+        <script src="/js/game.js"></script>
+    </body>
+</html>

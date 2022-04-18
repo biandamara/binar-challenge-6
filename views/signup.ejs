@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- judul website -->
+        <title>Sign Up</title>
+
+        <!-- panggil file css -->
+        <link rel="stylesheet" href="/css/signup.css" />
+    </head>
+    <body>
+        <div id="register-page">
+            <!-- tombol kembali ke landing page -->
+            <div class="button-back">
+                <button>
+                    <a href="/"> ◀︎ Back to Home </a>
+                </button>
+            </div>
+
+            <!-- box sign up -->
+            <div class="box-signup">
+                <div class="title">
+                    <h1>Sign Up</h1>
+                </div>
+
+                <form action="/signup" method="post">
+                    <!-- Username -->
+                    <div class="input-uername">
+                        <label for="email">
+                            <img
+                                src="/assets/svg/login/user.svg"
+                                alt="username"
+                            />
+                        </label>
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="Username"
+                            required
+                        />
+                    </div>
+
+                    <!-- Password -->
+                    <div class="input-password">
+                        <label for="password">
+                            <img
+                                src="/assets/svg/login/lock.svg"
+                                alt="password"
+                            />
+                        </label>
+                        <input
+                            type="password"
+                            name="password"
+                            id="password"
+                            placeholder="Password"
+                            required
+                        />
+                    </div>
+
+                    <!-- tombol registrasi -->
+                    <div class="button-submit">
+                        <button type="submit">Register</button>
+                        <button>
+                            <a href="login">Login</a>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

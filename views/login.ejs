@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- judul website -->
+        <title>Login</title>
+
+        <!-- panggil file css -->
+        <link rel="stylesheet" href="/css/login.css" />
+    </head>
+    <body>
+        <div id="login-page">
+            <!-- tombol kembali ke landing page -->
+            <div class="button-back">
+                <button>
+                    <a href="./"> ◀︎ Back to Home </a>
+                </button>
+            </div>
+
+            <!-- box login -->
+            <div class="box-login">
+                <div class="title">
+                    <h1>Login</h1>
+                </div>
+
+                <form action="/signup" method="get">
+                    <!-- menu input username -->
+                    <div class="input-uername">
+                        <label for="email">
+                            <img
+                                src="/assets/svg/login/user.svg"
+                                alt="username"
+                            />
+                        </label>
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="Username"
+                            required
+                        />
+                    </div>
+
+                    <!-- Password -->
+                    <div class="input-password">
+                        <label for="password">
+                            <img
+                                src="/assets/svg/login/lock.svg"
+                                alt="password"
+                            />
+                        </label>
+                        <input
+                            type="password"
+                            name="password"
+                            id="password"
+                            placeholder="Password"
+                            required
+                        />
+                    </div>
+
+                    <!-- tombol submit -->
+                    <div class="button-submit">
+                        <button type="submit">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
