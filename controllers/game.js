@@ -1,9 +1,9 @@
 // fungsi membaca halaman game
 function index(req, res) {
-    res.render("game");
+    res.render("main/game");
 }
 
-// modul yang dieksport
+// modul ekspor
 module.exports = {
     index,
 };

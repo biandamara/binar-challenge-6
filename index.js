@@ -1,25 +1,20 @@
 const express = require("express");
 const app = express();
-const morgan = require("morgan");
 const port = 3000;
 
-// memanggil module route
-const route = require("./controllers/route");
+// module router
+const routes = require("./routes/router");
+const middleware = require("./utils/middleware");
 
 // menjalakan module
+app.set("view engine", "ejs");
 app.use(express.json());
 app.use(express.static("public"));
-app.use(morgan("dev"));
-app.set("view engine", "ejs");
+app.use(express.urlencoded({ extended: false }));
 
-// menjalankan module eksport
-app.use(route);
-
-// menjalankan middleware error
-app.use("/", (req, res) => {
-    res.status(404);
-    res.render("error");
-});
+// menjalankan module ekspor
+app.use(routes);
+app.use(middleware);
 
 // menjalankan server lokal
 app.listen(port, () => {

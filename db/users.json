@@ -1,16 +1,19 @@
 [
     {
         "id": 1,
+        "username": "admin",
         "email": "admin@gmail.com",
         "password": "admin"
     },
     {
         "id": 2,
+        "username": "user",
         "email": "user@gmail.com",
         "password": "user"
     },
     {
         "id": 3,
+        "username": "binar",
         "email": "binar@gmail.com",
         "password": "binar"
     }

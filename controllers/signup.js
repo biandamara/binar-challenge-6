@@ -1,12 +1,12 @@
 // membaca file database users
-users = require("../db/users.json");
+let users = require("../db/users.json");
 
 // fungsi membaca halaman register
 function index(req, res) {
-    res.render("signup");
+    res.render("main/signup");
 }
 
-// modul yang dieksport
+// modul ekspor
 module.exports = {
     index,
 };

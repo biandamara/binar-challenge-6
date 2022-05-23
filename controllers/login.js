@@ -3,7 +3,7 @@ users = require("../db/users.json");
 
 // fungsi membaca halaman login
 function index(req, res) {
-    res.render("login");
+    res.render("main/login");
 }
 
 // fungsi membaca data users
@@ -13,7 +13,7 @@ function getUser(req, res) {
 
 // fungsi membaca data user bsedasarkan id
 function getUserId(req, res) {
-    const data = users.find((item) => {
+    const data = users.findIndex((item) => {
         return item.id == req.query.id;
     });
 
@@ -31,7 +31,7 @@ function getUserId(req, res) {
 function getLogin(req, res) {
     const email = req.body.email;
     const password = req.body.password;
-    const dataUsers = users.find((usersInput) => {
+    const dataUsers = users.findIndex((usersInput) => {
         return usersInput.email === email;
     });
 
@@ -59,7 +59,7 @@ function getLogin(req, res) {
     }
 }
 
-// eksport ke dalam module
+// modul ekspor
 module.exports = {
     index,
     getUser,

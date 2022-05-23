@@ -1,2 +1,7 @@
+# mengabaikan upload node modules
 node_modules
+package-lock.json
+
+# mengabaikan upload file DS_Store
 .DS_Store
+**/.DS_Store

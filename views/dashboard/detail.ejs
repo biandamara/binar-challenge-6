@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Detail User</title>
+
+        <!-- panggil file css -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="table-responsive">
+                <div class="table-wrapper">
+                    <div class="table-title">
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <h2>Customer Details</h2>
+                            </div>
+                        </div>
+                    </div>
+        <table class="table table-striped table-hover table-bordered">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Username <i class="fa fa-sort"></i></th>
+                    <th>E-mail <i class="fa fa-sort"></i></th>
+                    <th>Password</th>
+                    <th>Age<i class="fa fa-sort"></i></th>
+                    <th>Gender<i class="fa fa-sort"></i></th>
+                    <th>Phone</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% listUserGame.forEach(i => { %>
+                <tr>
+                    <th scope="row"><%= i.id %></th>
+                    <td><%= i.username %></td>
+                    <td><%= i.email %></td>
+                    <td><%= i.password %></td>
+                    <td><%= i.age %></td>
+                    <td><%= i.gender %></td>
+                    <td><%= i.phone %></td>
+                </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    </body>
+</html>

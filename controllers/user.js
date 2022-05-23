@@ -7,7 +7,7 @@ function getUser(req, res) {
 
 // fungsi membaca data user berdasarkan id
 function getUserID(req, res) {
-    const data = users.find((item) => {
+    const data = users.findIndex((item) => {
         return item.id == req.params.id;
     });
 
@@ -21,7 +21,7 @@ function getUserID(req, res) {
     res.status(200).json(data);
 }
 
-// eksport ke dalam module
+// modul ekspor
 module.exports = {
     getUser,
     getUserID,

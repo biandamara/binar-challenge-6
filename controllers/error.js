@@ -1,6 +1,7 @@
-// fungsi membaca halaman index
+// fungsi membaca halaman error
 function index(req, res) {
-    res.render("main/index");
+    res.status(404);
+    res.render("error");
 }
 
 // modul ekspor
